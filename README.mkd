@@ -1,0 +1,4 @@
+# MMULT: multiple sample analysis from large-scale WGBS data
+
+A scalable, accurate, and efficient solution for DNA methylation analysis of whole-genome bisulfite sequencing (WGBS) data.
+

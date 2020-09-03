@@ -1,0 +1,13 @@
+# Stage-specific variant detection using beta-binomial generalized linear model
+
+## Dependencies
+
+```
+conda install compilers
+conda install boost
+conda install sundials
+conda install rapidjson
+conda install eigen
+conda install tbb-devel
+```
+
