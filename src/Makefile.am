@@ -1,1 +1,1 @@
-SUBDIRS = bbglm cpgcdifenrich
+SUBDIRS = bbglm cpgcdifenrich vmcvmrnme

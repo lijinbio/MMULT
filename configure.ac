@@ -50,5 +50,6 @@ AC_CONFIG_FILES([
 	src/Makefile
 	src/bbglm/Makefile
 	src/cpgcdifenrich/Makefile
+	src/vmcvmrnme/Makefile
 	])
 AC_OUTPUT
