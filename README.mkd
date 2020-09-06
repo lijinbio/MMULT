@@ -6,7 +6,9 @@ MMULT is a scalable and efficient solution for DNA methylation analysis of large
 
 1. BBGLM
 
-BBGLM resolves DNA methylation dynamics using beta-binomial generalized linear model. Utilization of stan library (https://github.com/stan-dev/cmdstan) enables fast execution of model fit for CpG dinucleotides in the whole-genome scale.
+BBGLM resolves DNA methylation dynamics using beta-binomial generalized linear model. Utilization of stan library (https://github.com/stan-dev/cmdstan) enables fast execution of model fit for CpG dinucleotides in the whole-genome scale. An example _p_-value and _q_-value distributions by BBGLM is as below.
+
+![BBGLM_pvalue_qvalue](https://ndownloader.figshare.com/files/24594479?private_link=8cd07dabcde5a773defd)
 
 ```
 Allowed options:
@@ -53,7 +55,9 @@ Authors: Jin Li <lijin.abc@gmail.com>
 
 2. CpGCDIFEnrich
 
-The CpGCDIFEnrich module consolidates methylation differences from individual comparisons using KL-divergence. Credible methylation difference (CDIF, https://github.com/sunnyisgalaxy/moabs) represents methylation difference in an individual comparison between two biological conditions. For a CpG site, CpGCDIFEnrich formulates the consolidated methylation difference using KL-divergence of sample CDIFs compared to the background distirbution of CDIFs among whole-genome CpGs.
+The CpGCDIFEnrich module consolidates methylation differences from individual comparisons using KL-divergence. Credible methylation difference (CDIF, https://github.com/sunnyisgalaxy/moabs) represents methylation difference in an individual comparison between two biological conditions. For a CpG site, CpGCDIFEnrich formulates the consolidated methylation difference using KL-divergence of sample CDIFs compared to the background distirbution of CDIFs among whole-genome CpGs. Below image shows the background distribution of CDIFs, one positive CpG with a high KL-divergence value, and a scatterplot of KL-divergence and sum of CDIFs.
+
+![cpgcdifenrich_hist](https://ndownloader.figshare.com/files/24594557?private_link=8cd07dabcde5a773defd)
 
 ```
 Allowed options:
@@ -99,7 +103,9 @@ Authors: Jin Li <lijin.abc@gmail.com>
 
 3. VMCVMRNME
 
-This module aims to detect variable methylated CpGs (VMCs) and variable methylation regions (VMRs) of samples in a single biological group. A VMC is denoted under less randomness (smaller normalized entropy) and large variation. VMCs and VMRs enable a feasible solution for subtype detection in large-scale samples using methylation profiles.
+This module aims to detect variable methylated CpGs (VMCs) and variable methylation regions (VMRs) of samples in a single biological group. A VMC is denoted under less randomness (smaller normalized entropy) and large variation. VMCs and VMRs enable a feasible solution for subtype detection in large-scale samples using methylation profiles. An example subtyping solution using VMCs is as below.
+
+![cc_vmcvmrnme](https://ndownloader.figshare.com/files/24594527?private_link=8cd07dabcde5a773defd)
 
 ```
 Allowed options:
