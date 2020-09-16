@@ -86,7 +86,7 @@ int parse_options(int ac, const char ** av) {
 			cout << endl;
 			cout << "Date: 2020/08/19" << endl;
 			cout << "Authors: Jin Li <lijin.abc@gmail.com>" << endl;
-			exit(1);
+			exit(0);
 		}
 
 		for(map<string, variable_value>::iterator it=vm.begin(); it!=vm.end(); ++it) {
