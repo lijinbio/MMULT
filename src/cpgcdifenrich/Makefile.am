@@ -5,3 +5,7 @@ cpgcdifenrich_LDADD = -lz -lpthread -lboost_program_options -lboost_system -lboo
 cpgcdifenrich_SOURCES = \
 	types.cpp types.h \
 	cpgcdifenrich.cpp
+
+cpgcdifenrichhistdir = $(bindir)
+cpgcdifenrichhist_DATA = cpgcdifenrichhist.R
+EXTRA_DIST = cpgcdifenrichhist.R
