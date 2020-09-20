@@ -145,28 +145,24 @@ Authors: Jin Li <lijin.abc@gmail.com>
 
 ## Installation
 
-To compile and run MMULT, the following dependencies are required. It is encouraged to use conda compilers due to dependent software can be easily installed and managed via conda. Namely,
+It is encouraged to install MMULT via Bioconda due to runtime dependencies will be installed automatically by Conda. Namely,
 
 ```
-conda install compilers
-conda install boost
-conda install sundials
-conda install rapidjson
-conda install eigen
-conda install tbb-devel
+conda config --add channels defaults
+conda config --add channels bioconda
+conda config --add channels conda-forge
+conda install MMULT
 ```
 
-After installing required dependencies, below example Bash commands will compile MMULT modules.
+where dependent software are below.
 
-```
-condaroot=$(conda info --base)
-source "$condaroot/etc/profile.d/conda.sh"
-conda init
-conda activate
-autoreconf -i
-./configure CPPFLAGS=-I"$condaroot/include" LDFLAGS=-L"$condaroot/lib -Wl,-rpath,$condaroot/lib"
-make
-```
+| Software | URL |
+|-------|-------|
+| boost | https://www.boost.org |
+| sundials | https://github.com/LLNL/sundials |
+| rapidjson | https://github.com/Tencent/rapidjson |
+| eigen | http://eigen.tuxfamily.org |
+| tbb-devel | https://github.com/oneapi-src/oneTBB |
 
 ## Contact
 
